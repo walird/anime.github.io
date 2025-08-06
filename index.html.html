@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Mi Mitorcita</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(to bottom right, #ffe6f0, #f0f8ff); color: #333; padding: 20px; text-align: center; }
+    h1 { font-size: 2.5em; color: #cc3366; }
+    p { font-size: 1.2em; max-width: 600px; margin: 20px auto; }
+    .music { margin: 30px 0; }
+    .photo-space img { max-width: 90%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .secret-button { background-color: #cc3366; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 1em; cursor: pointer; margin-top: 30px; }
+    .secret-message { display: none; margin-top: 20px; font-size: 1.1em; color: #444; }
+  </style>
+</head>
+<body>
+  <h1>Para Mi Mitorcita 💖</h1>
+  <p>
+    Hola cariño, sé que no estás bien de ánimo y quizás te sientas derrotada, pero recuerda que eres fuerte 💪 y que esto no es nada para ti.
+    Has logrado llegar hasta aquí viva, empoderada, bella, segura, inteligente, sexy, en tu mejor versión... así que no es hora de rendirte.
+    Ahora es que empieza lo mejor. Estoy contigo siempre.
+  </p>
+
+  <audio src="Si supieras lo que siento con mirarte....mp3" autoplay loop hidden></audio>
+
+  <div class="photo-space">
+    <img src="1.jpg" alt="imagen 1" >
+  </div>
+
+  <button class="secret-button" onclick="mostrarMensaje()">💌 Mensaje secreto</button>
+  <div id="mensajeSecreto" class="secret-message">
+    A pesar del tiempo y los problemas que pasamos, aún me quieres y amas, y yo también. Enfrentaremos el mundo 🌎 juntos en las malas y en las buenas. Esté o no contigo físicamente, estaré ahí para ti, siempre. ❤️
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensajeSecreto").style.display = "block";
+    }
+  </script>
+</body>
+</html>
